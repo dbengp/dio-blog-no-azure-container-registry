@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="post-title">Detalhes do Post</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/">← Voltar para a lista de posts</a>
+        <h1 id="post-detail-title"></h1>
+        <p class="post-meta">Por <span id="post-author"></span> em <span id="post-date"></span></p>
+    </header>
+    <main>
+        <div id="post-content"></div>
+
+        <hr>
+        <h2>Comentários</h2>
+        <div id="comments-list">
+            </div>
+
+        <h3>Deixe seu Comentário</h3>
+        <form id="comment-form">
+            <label for="comment-author">Seu Nome:</label>
+            <input type="text" id="comment-author" required><br><br>
+            <label for="comment-content">Comentário:</label><br>
+            <textarea id="comment-content" rows="5" required></textarea><br><br>
+            <button type="submit">Adicionar Comentário</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Meu Blog. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script> <script src="js/comments.js"></script>
+</body>
+</html>
