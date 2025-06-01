@@ -9,7 +9,7 @@
 - Imagens e Artefatos Suportados: O ACR pode incluir imagens Windows e Linux, e também armazena formatos de conteúdo relacionados, como gráficos Helm e imagens construídas de acordo com a especificação do formato de imagem Open Container Initiative (OCI).
 - Compilações Automatizadas de Imagens: As tarefas do Azure Container Registry simplificam a construção, teste, envio e implantação de imagens no Azure, incluindo a automação de pipelines de aplicação de patches de SO de contêiner e de framework
 
-### Como Enviar uma Imagem de uma Aplicação HTML/CSS/JavaScript para o ACR:
+### Como Enviar uma Imagem de uma Aplicação de um Blog HTML/CSS/JavaScript para o ACR:
 - A título de demonstração criei esse aplicação simples de um Blog escrito com HTML, CSS e JavaScript ( ):
   * Conteúdo Estático: Os layouts básicos do blog (cabeçalhos, rodapés, menus) são arquivos HTML estáticos.
   * Interatividade com JavaScript:
@@ -17,5 +17,39 @@
     * Renderizar Posts: Manipular o DOM para exibir os posts na página inicial e o conteúdo detalhado de um post.
     * Carregar Comentários: Fazer requisições para buscar os comentários de um post.
     * Enviar Comentários: Enviar dados do formulário de comentários no post.
+- Clone esse repositório e esteja com o runtime do Docker rodando localmente.
+- Faça login no Azure: `az login`
+- Faça login no seu Registro ACR: `az acr login --name registro_no_acr`
+- Construa a Imagem Docker: `docker build -t registro_no_acr.azurecr.io/blogapp:v1 .`
+- Envie a Imagem para o ACR: `docker push registro_no_acr.azurecr.io/blogapp:v1`
 
-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
