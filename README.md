@@ -18,3 +18,4 @@
     * Carregar Comentários: Fazer requisições para buscar os comentários de um post.
     * Enviar Comentários: Enviar dados do formulário de comentários no post.
 
+- 
